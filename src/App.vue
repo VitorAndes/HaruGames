@@ -17,7 +17,7 @@ import ProfileCard from './components/ProfileCard.vue';
 
 #body {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   min-height: 100vh;
   padding: 12px;
 
@@ -33,8 +33,9 @@ import ProfileCard from './components/ProfileCard.vue';
     }
 
     @media (min-width: 1380px) {
-      width: max(1300px);
+      width: 1300px;
       padding: 2rem;
+      flex-direction: row;
     }
   }
 }

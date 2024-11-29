@@ -5,7 +5,7 @@ import GamesCard from './GamesCard.vue'
 <template>
   <div id="Container_gameHub">
     <header class="gameHub_header">
-      <h1>Steam</h1>
+      <h1>Jogos</h1>
     </header>
     <div class="gamehub_games">
       <GamesCard />
@@ -22,13 +22,13 @@ import GamesCard from './GamesCard.vue'
   gap: 16px;
 
   .gameHub_header {
-    height: 50px;
+    height: 70px;
     width: 100%;
     border-radius: @border_radius;
     .background_glass();
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 12px;
 
     h1 {
       .format_title();

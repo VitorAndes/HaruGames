@@ -10,12 +10,43 @@
             </div>
             <div class="profile_status">
                 <span>Playing...</span>
-                <div class="status_rewards">
-                    <span>Badge</span>
-                    <span>Badge</span>
-                    <span>Badge</span>
-                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita ut quibusdam accusamus
+                </p>
             </div>
+        </div>
+        <div class="container_achievements">
+            <h2>Achievements</h2>
+            <div class="achievements">
+                <span>achievements</span>
+                <span>achievements</span>
+                <span>achievements</span>
+            </div>
+        </div>
+        <div class="container_insignia">
+            <h2>insignia</h2>
+            <div class="insignia">
+                <span>insignia</span>
+                <span>insignia</span>
+                <span>insignia</span>
+            </div>
+        </div>
+        <div class="container_infos">
+            <span>info</span>
+            <span>info</span>
+            <span>info</span>
+        </div>
+        <div class="container_friends">
+            <h2>Friends</h2>
+            <div class="friend">
+                <span>friend_avatar</span>
+                <span>friend_name</span>
+            </div>
+
+            <div class="friend">
+                <span>friend_avatar</span>
+                <span>friend_name</span>
+            </div>
+
         </div>
     </div>
 </template>
@@ -25,12 +56,21 @@
 
 #Container_profile {
     display: flex;
-    gap: 4px;
-    height: 150px;
+    justify-content: space-between;
+    gap: 24px;
     width: 100%;
     .background_glass();
     border-radius: @border_radius;
-    padding: 8px;
+    padding: 24px;
+
+    h2 {
+        .format_title_card();
+    }
+
+    span {
+        .format_description();
+    }
+
 
     .profile {
         display: flex;
@@ -38,31 +78,78 @@
         gap: 8px;
 
         .profile_avatar {
-            text-align: center;
 
             h1 {
                 .format_title();
-                margin-top: 6px;
+                margin-top: 16px;
             }
 
             img {
                 border-radius: @border_radius;
-                width: 100px;
-                height: 100px;
+                width: 160px;
+                height: 150px;
+                .backgroundCard_glass();
             }
         }
 
         .profile_status {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 15px;
             height: 100%;
 
             .status_rewards {
                 display: flex;
-                gap: 4px;
+                gap: 8px;
             }
         }
+
+    }
+
+    .container_achievements {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+        .achievements {
+            display: flex;
+            gap: 8px;
+        }
+
+    }
+
+    .container_insignia {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .insignia {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    .container_infos {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .container_friends {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .friend {
+            display: flex;
+            gap: 8px;
+        }
+    }
+
+    @media (min-width: 1380px) {
+        width: 800px;
+        flex-direction: column;
     }
 }
 </style>
