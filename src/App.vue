@@ -11,7 +11,6 @@ import ProfileCard from './components/ProfileCard.vue';
     </div>
   </div>
 </template>
-
 <style lang="less">
 @import '/src/variables.less';
 

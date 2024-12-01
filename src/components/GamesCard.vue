@@ -4,25 +4,24 @@ import { ref } from 'vue';
 interface Games {
     game_img: string;
     game_title: string;
-    game_description: string;
 }
 
 const games = ref<Games[]>([
     {
         game_img: 'https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg',
-        game_title: 'Minecraft',
+        game_title: 'Minecraft'
     },
     {
         game_img: 'https://assetsio.gnwcdn.com/co49wj.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp',
-        game_title: 'LOL',
+        game_title: 'LOL'
     },
     {
         game_img: 'https://www.adrenaline.com.br/wp-content/uploads/2023/05/valorant-cover.jpg',
-        game_title: 'Valorant',
+        game_title: 'Valorant'
     },
     {
         game_img: 'https://cdn2.steamgriddb.com/grid/d18c832e8c956b4ef8b92862e6bf470d.png',
-        game_title: 'Hollow knight',
+        game_title: 'Hollow knight'
     },
     {
         game_img: 'https://sm.ign.com/ign_br/cover/c/celeste/celeste_y4wf.jpg',
